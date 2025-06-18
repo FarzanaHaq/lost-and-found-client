@@ -1,0 +1,45 @@
+import React from 'react';
+
+const Safety = () => {
+    return (
+        <div>
+            <section className=" py-12 px-4 md:px-10">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-3xl font-bold text-sky-800 mb-6">🔒 Safety Tips When Meeting Someone</h2>
+    <p className="text-gray-600 mb-10">
+      Keep yourself and your belongings safe when connecting with others to return or claim items.
+    </p>
+    <div className="grid md:grid-cols-2 gap-6 text-left">
+      <div className="bg-white shadow-md rounded-xl p-6 border-l-4 border-sky-800">
+        <h3 className="font-semibold text-lg mb-2">📍 Meet in Public Places</h3>
+        <p className="text-gray-600">
+          Choose locations like cafes, police stations, or community centers. Avoid secluded areas.
+        </p>
+      </div>
+      <div className="bg-white shadow-md rounded-xl p-6 border-l-4  border-sky-800">
+        <h3 className="font-semibold text-lg mb-2">🆔 Request Proof of Ownership</h3>
+        <p className="text-gray-600">
+          Ask for identifying details (photos, serial number, description) before handing over items.
+        </p>
+      </div>
+      <div className="bg-white shadow-md rounded-xl p-6 border-l-4  border-sky-800">
+        <h3 className="font-semibold text-lg mb-2">👫 Don’t Go Alone</h3>
+        <p className="text-gray-600">
+          Bring a friend or family member with you if possible, especially for high-value items.
+        </p>
+      </div>
+      <div className="bg-white shadow-md rounded-xl p-6 border-l-4  border-sky-800">
+        <h3 className="font-semibold text-lg mb-2">🚫 Never Share Personal Info</h3>
+        <p className="text-gray-600">
+          Avoid sharing your home address, financial details, or anything sensitive online or in person.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        </div>
+    );
+};
+
+export default Safety;
