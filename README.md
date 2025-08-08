@@ -1,12 +1,43 @@
-# React + Vite
+# 🧳 Lost & Found
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application where users can post and search for lost or found items in their area. Whether you’ve misplaced something or found someone else's belongings, this platform helps connect items with their rightful owners.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 [Live Site](https://assignment-ten-ec683.web.app/)
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+- React
+- React Router DOM
+- Tailwind CSS
+- DaisyUI
+- Framer Motion
+- Firebase Authentication
+
+### **Backend**
+- Express.js
+- MongoDB
+- Node.js
+
+---
+
+## ✨ Core Features
+
+- 🔐 Secure login/register with Firebase Authentication
+- 📝 Post lost or found items with image, description, and location
+- 🔍 Filter/search posts by item type or keyword
+- 📄 View item details and contact the poster
+- 📱 Fully responsive design with Tailwind CSS
+- 🎞️ Smooth animations using Framer Motion
+
+
+
+
+
