@@ -50,102 +50,154 @@ const Add = () => {
 
   return (
     <div>
-        <Helmet>
+      <Helmet>
         <meta charSet="utf-8" />
         <title>Add Items</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <div className="max-w-6xl mx-auto mt-10">
-        <h1 className="mb-5 text-center text-2xl font-bold text-sky-800">
-          Add A Lost Item!
+      <div className="max-w-6xl mx-auto mt-28">
+        <h1 className="mb-5 text-center text-[25px] font-bold text-[#1EA69A]">
+          Have you lost/found something? Make a post!
         </h1>
-        <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Post Type</label>
-              <select name="type" defaultValue="Lost" className="select w-full">
+        <form
+          onSubmit={handleSubmit}
+          className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 mt-10 border border-gray-100"
+        >
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Post Type */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Post Type
+              </label>
+              <select
+                name="type"
+                defaultValue="Lost"
+                className="select select-bordered w-full focus:border-sky-500 focus:ring focus:ring-sky-200"
+              >
                 <option>Lost</option>
                 <option>Found</option>
               </select>
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Title</label>
+            </div>
+
+            {/* Title */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Title
+              </label>
               <input
                 type="text"
                 name="title"
-                className="input w-full"
-                placeholder="Title"
+                placeholder="Enter item title"
+                className="input input-bordered w-full focus:border-sky-500 focus:ring focus:ring-sky-200"
               />
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Description</label>
-              <input
-                type="text"
+            </div>
+
+            {/* Description */}
+            <div className="md:col-span-2">
+              <label className="block text-gray-700 font-medium mb-2">
+                Description
+              </label>
+              <textarea
                 name="description"
-                className="input w-full"
-                placeholder="Description"
-              />
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Category</label>
-              <select name="category" defaultValue="Pets" className="select w-full">
+                rows="3"
+                placeholder="Describe the item, where it was lost/found..."
+                className="textarea textarea-bordered w-full focus:border-sky-500 focus:ring focus:ring-sky-200"
+              ></textarea>
+            </div>
+
+            {/* Category */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Category
+              </label>
+              <select
+                name="category"
+                defaultValue="Pets"
+                className="select select-bordered w-full focus:border-sky-500 focus:ring focus:ring-sky-200"
+              >
                 <option>Pets</option>
                 <option>Documents</option>
-                <option>Electronic</option>
+                <option>Electronics</option>
+                <option>Clothing</option>
+                <option>Other</option>
               </select>
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Location</label>
+            </div>
+
+            {/* Location */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Location
+              </label>
               <input
                 type="text"
                 name="location"
-                className="input w-full"
-                placeholder="Location"
+                placeholder="e.g. Central Park, Dhaka"
+                className="input input-bordered w-full focus:border-sky-500 focus:ring focus:ring-sky-200"
               />
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Date</label>
+            </div>
+
+            {/* Date */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Date
+              </label>
               <DatePicker
                 selected={selectedDate}
                 onChange={(date) => setSelectedDate(date)}
-                className="border-2 border-gray-200 py-2 px-2 w-full rounded-sm bg-white"
+                className="input input-bordered focus:border-sky-500 focus:ring focus:ring-sky-200 w-[405px]"
               />
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Thumbnail</label>
+            </div>
+
+            {/* Thumbnail */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Thumbnail URL
+              </label>
               <input
                 type="text"
                 name="photo"
-                className="input w-full"
-                placeholder="Photo URL"
+                placeholder="Enter image URL"
+                className="input input-bordered w-full focus:border-sky-500 focus:ring focus:ring-sky-200"
               />
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4 ">
-              <label className="label">Name</label>
+            </div>
+
+            {/* Name */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Name
+              </label>
               <input
                 type="text"
                 name="name"
-                className="input w-full"
                 defaultValue={user?.displayName}
                 disabled
+                className="input input-bordered w-full bg-gray-100 text-gray-600"
               />
-            </fieldset>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
-              <label className="label">Email</label>
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Email
+              </label>
               <input
                 type="text"
                 name="email"
-                className="input w-full"
                 defaultValue={user?.email}
                 disabled
+                className="input input-bordered w-full bg-gray-100 text-gray-600"
               />
-            </fieldset>
+            </div>
           </div>
-          <input
+
+          {/* Submit Button */}
+          <button
             type="submit"
-            className="btn w-full text-sky-800 mt-8 font-bold text-[18px]"
-            value="Submit"
-          />
+            className="btn bg-[#1EA69A] text-white font-bold text-lg w-full mt-8"
+          >
+            Submit
+          </button>
         </form>
       </div>
       <ToastContainer></ToastContainer>

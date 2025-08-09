@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowRight } from "react-icons/fa";
 
 const Banner = () => {
   var settings = {
@@ -12,46 +13,55 @@ const Banner = () => {
   };
   return (
     <div>
-      <div className="max-w-6xl mx-auto my-16">
+      <div className="max-w-7xl mx-auto my-32 px-5">
         <Slider {...settings}>
-          <div className=" py-32 space-y-4 bg-cover bg-center bg-[url('https://i.ibb.co/pr9TT49z/juho-luomala-GVRH4yv55kk-unsplash.jpg')]">
-            <p className="text-center text-white text-3xl font-medium">
+          <div className="relative h-[550px] space-y-4 bg-cover bg-center bg-[url('https://i.ibb.co/pr9TT49z/juho-luomala-GVRH4yv55kk-unsplash.jpg')]">
+             <div className="h-[550px] absolute inset-0 bg-black/30"></div>
+           <div className="mt-40 relative z-10">
+             <p className="text-center text-white text-[60px] font-medium">
             Lost Something Important?
             </p>
-            <p className="text-center text-white text-[18px]">
-             Don’t panic. Submit your lost item details and let our community help you recover it.
+            <p className="text-center text-gray-100 text-[24px] font-semibold mt-5 ">
+             Don’t panic. Submit your lost item details and let our <br /> community help you recover it.
             </p>
             <div className="flex justify-center">
-              <button className="btn text-blue-800 font-bold shadow-none rounded-none mt-5">
-               Report Lost Item
+              <button className="btn text-white text-[16px] bg-transparent border-none font-bold shadow-none rounded-none mt-5 flex items-center">
+               Report Lost Item <FaArrowRight className="mt-1"/>
               </button>
             </div>
+           </div>
           </div>
-          <div className=" py-32 space-y-4 bg-[url('https://i.ibb.co/1fT1dMWm/taylor-beach-4t-Ye-Gr-Ki-HTE-unsplash.jpg')] bg-cover bg-center">
-            <p className="text-center text-white  text-3xl font-medium">
-             Found Something That’s Not Yours?
+            <div className="relative h-[550px] space-y-4 bg-cover bg-center bg-[url('https://i.ibb.co/1fT1dMWm/taylor-beach-4t-Ye-Gr-Ki-HTE-unsplash.jpg')]">
+             <div className="h-[550px] absolute inset-0 bg-black/20"></div>
+           <div className="mt-40 relative z-10">
+             <p className="text-center text-white text-[50px] font-medium">
+           Found Something That’s Not Yours?
             </p>
-            <p className="text-center text-white text-[18px]">
-            Help reunite it with the rightful owner. Post what you’ve found in just a few clicks.
+            <p className="text-center text-gray-100 text-[24px] font-semibold mt-5 ">
+              Help reunite it with the rightful owner. Post what you’ve <br /> found in just a few clicks.
             </p>
             <div className="flex justify-center">
-              <button className="btn text-[#01875F] font-bold shadow-none rounded-none mt-5">
-                Post Found Item
+              <button className="btn text-white text-[16px] bg-transparent border-none font-bold shadow-none rounded-none mt-5 flex items-center">
+                 Post Found Item<FaArrowRight className="mt-1"/>
               </button>
             </div>
+           </div>
           </div>
-          <div className=" py-32 space-y-4 bg-[url('https://i.ibb.co/WNXXSsDh/elimende-inagella-HTpl-JM19vhk-unsplash.jpg')] bg-cover bg-center">
-            <p className="text-center text-white  text-3xl font-medium">
-              Browse the Latest Lost & Found Reports
+             <div className="relative h-[550px] space-y-4 bg-cover bg-center bg-[url('https://i.ibb.co/WNXXSsDh/elimende-inagella-HTpl-JM19vhk-unsplash.jpg')]">
+             <div className="h-[550px] absolute inset-0 bg-black/15"></div>
+           <div className="mt-40 relative z-10">
+             <p className="text-center text-white text-[50px] font-medium">
+            Browse the Latest Lost & Found Reports
             </p>
-            <p className="text-center text-white text-[18px]">
-              Stay updated with recent activity. You might spot something you’ve lost — or help someone else.
+            <p className="text-center text-gray-100 text-[22px] font-semibold mt-5 ">
+             Stay updated with recent activity. You might spot something <br /> you’ve lost — or help someone else.
             </p>
             <div className="flex justify-center">
-              <button className="btn text-[#01875F] font-bold shadow-none rounded-none mt-5">
-               View Recent Posts
+              <button className="btn text-white bg-transparent text-[16px] border-none font-bold shadow-none rounded-none mt-5 flex items-center">
+               View Recent Posts <FaArrowRight className="mt-1"/>
               </button>
             </div>
+           </div>
           </div>
         </Slider>
       </div>
