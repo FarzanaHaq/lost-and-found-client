@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
+import '../../../src/index.css'
 
 const Recent = () => {
   const tips = [
@@ -33,9 +34,9 @@ const Recent = () => {
   ];
 
   return (
-    <section className="relative  py-16 px-6 overflow-hidden">
+    <section className="relative pb-5 overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="text-3xl font-bold text-center mb-8 text-[#1EA69A] flex items-center justify-center gap-2">
+        <h2 className="text-3xl font-bold text-center mb-8 text-[#1EA69A] flex items-center justify-center gap-2 sora-font">
           Featured Posts
         </h2>
         <div className="grid md:grid-cols-3 gap-6">

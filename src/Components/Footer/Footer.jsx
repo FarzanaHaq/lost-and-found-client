@@ -1,26 +1,24 @@
-import React from 'react';
+import { FaBasketShopping } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const Footer = () => {
-    return (
-        <div>
-           <footer className="footer sm:footer-horizontal bg-white text-neutral-content p-10 mt-20">
-        <aside className="pl-14">
-          <img
-            className="w-15 h-15 bg-white mt-1"
-            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/shopping-basket-design-template-14904f1442021df3807b73464a4857b4_screen.jpg?ts=1635717553"
-            alt=""
-          />
-          <p className="text-gray-600 text-[16px] font-medium">
+  return (
+    <div>
+      <footer className="footer sm:footer-horizontal bg-white text-neutral-content p-10 mt-10">
+        <aside className="pl-18">
+          <FaBasketShopping className="text-[#1EA69A] w-15 h-15" />
+         <Link to={"/terms"}> <p className="text-gray-600 text-[16px] font-medium">
             Terms of Service
-          </p>
-          <p className="text-gray-600 text-[16px] font-medium">
+          </p></Link>
+        <Link to={"/poli"}>  <p className="text-gray-600 text-[16px] font-medium">
             Privacy Policy
-          </p>
-          <p className="text-gray-600 text-[16px] font-medium">
-            Contact Us
-          </p>
+          </p></Link>
+          <Link to={"/contact"}>
+            {" "}
+            <p className="text-gray-600 text-[16px] font-medium">Contact Us</p>
+          </Link>
         </aside>
-        <nav className="ml-40">
+        <nav className="ml-90 mt-13">
           <h6 className="footer-title text-gray-800">Social</h6>
           <div className="grid grid-flow-col gap-4">
             <a>
@@ -59,8 +57,8 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Footer;

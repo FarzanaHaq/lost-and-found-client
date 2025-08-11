@@ -14,11 +14,17 @@ import Details from "./Components/Details/Details";
 import Update from "./Components/Update/Update";
 import AllRecovered from "./Components/AllRecovered/AllRecovered";
 import PrivateRoute from "./Components/Routes/PrivateRoute";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
+import Contact from "./Components/Contact/Contact";
+import { ToastContainer } from "react-toastify";
+import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
+import TermsOfService from "./Components/TermsOfService/TermsOfService";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
@@ -34,12 +40,15 @@ const router = createBrowserRouter([
       },
       {
         path: "add",
-        element: <PrivateRoute><Add></Add></PrivateRoute> 
+        element: (
+          <PrivateRoute>
+            <Add></Add>
+          </PrivateRoute>
+        ),
       },
       {
         path: "all",
         Component: AllItems,
-        loader: () => fetch("http://localhost:3000/allItems"),
       },
       {
         path: "my",
@@ -49,17 +58,41 @@ const router = createBrowserRouter([
         path: "details/:id",
         loader: ({ params }) =>
           fetch(`http://localhost:3000/items/${params.id}`),
-        element: <PrivateRoute><Details></Details></PrivateRoute> 
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
       },
-        {
+      {
         path: "update/:id",
-          loader: ({ params }) =>
+        loader: ({ params }) =>
           fetch(`http://localhost:3000/items/${params.id}`),
-        element: <PrivateRoute><Update></Update></PrivateRoute> 
+        element: (
+          <PrivateRoute>
+            <Update></Update>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "all-recover",
+        element: (
+          <PrivateRoute>
+            <AllRecovered></AllRecovered>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "contact",
+        Component: Contact,
       },
         {
-        path: "all-recover",
-        element: <PrivateRoute><AllRecovered></AllRecovered></PrivateRoute> 
+        path: "poli",
+        Component: PrivacyPolicy,
+      },
+         {
+        path: "terms",
+        Component: TermsOfService,
       },
     ],
   },
@@ -69,6 +102,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>
       <RouterProvider router={router} />
+      <ToastContainer />
     </AuthProvider>
   </StrictMode>
 );

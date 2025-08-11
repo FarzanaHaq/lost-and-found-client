@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import '../../../src/index.css'
 
 const Safety = () => {
   return (
     <div>
-      <section className=" py-12 px-4 md:px-10">
+      <section className=" py-6 px-2 md:px-10">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#1EA69A] mb-6">
+          <h2 className="text-3xl font-bold text-[#1EA69A] mb-6 sora-font">
             🔒 Safety Tips When Meeting Someone
           </h2>
           <p className="text-gray-600 mb-10">
