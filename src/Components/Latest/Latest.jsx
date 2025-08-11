@@ -35,7 +35,7 @@ const Latest = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="bg-white shadow-lg  overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow"
+                className="bg-white shadow-lg  overflow-hidden  hover:shadow-xl transition-shadow bg-primary"
               >
                 {/* Image */}
                 <div className="relative">
@@ -84,7 +84,7 @@ const Latest = () => {
 
                   {/* Contact Button */}
                   <Link to={`/details/${item._id}`}>
-                    <button className="btn bg-[#1EA69A] text-white w-full mt-3">
+                    <button className="btn bg-[#1EA69A] text-white w-full mt-3 border-none">
                       View details
                     </button>
                   </Link>

@@ -4,22 +4,22 @@ import { Link } from "react-router";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-white text-neutral-content p-10 mt-10">
+      <footer className="footer sm:footer-horizontal bg-white text-neutral-content p-10 mt-10 bg-primary">
         <aside className="pl-18">
           <FaBasketShopping className="text-[#1EA69A] w-15 h-15" />
-         <Link to={"/terms"}> <p className="text-gray-600 text-[16px] font-medium">
+         <Link to={"/terms"}> <p className="text-gray-600 text-[16px] font-medium letter-primary">
             Terms of Service
           </p></Link>
-        <Link to={"/poli"}>  <p className="text-gray-600 text-[16px] font-medium">
+        <Link to={"/poli"}>  <p className="text-gray-600 text-[16px] font-medium letter-primary">
             Privacy Policy
           </p></Link>
           <Link to={"/contact"}>
             {" "}
-            <p className="text-gray-600 text-[16px] font-medium">Contact Us</p>
+            <p className="text-gray-600 text-[16px] font-medium letter-primary">Contact Us</p>
           </Link>
         </aside>
         <nav className="ml-90 mt-13">
-          <h6 className="footer-title text-gray-800">Social</h6>
+          <h6 className="footer-title text-gray-800 letter-primary">Social</h6>
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg

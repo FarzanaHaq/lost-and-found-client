@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white px-20">
+    <div className="fixed top-0 left-0 w-full z-50 bg-white px-20 bg-primary">
       <div className="navbar bg-white-100 max-w-7xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -93,7 +93,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "border-b-2 rounded-none text-[#1EA69A] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
-                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
+                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none letter-primary"
                 }
               >
                 Home
@@ -101,10 +101,10 @@ const Header = () => {
             </li>
             <li>
               <details className="">
-                <summary className="font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none">
+                <summary className="font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none letter-primary">
                   Lost & Found
                 </summary>
-                <ul className="p-2 w-[200px] mt-0 z-10">
+                <ul className="p-2 w-[200px] mt-0 z-10 letter-primary">
                   <li>
                     <NavLink to={"/all"}>All Items</NavLink>
                   </li>
@@ -133,7 +133,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "border-b-2 rounded-none text-[#1EA69A] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
-                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
+                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none letter-primary"
                 }
               >
                 Post Here

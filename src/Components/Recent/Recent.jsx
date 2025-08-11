@@ -46,7 +46,7 @@ const Recent = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white shadow-md rounded-lg p-6"
+              className="bg-white shadow-md rounded-lg p-6 bg-primary"
             >
               <h3 className="text-xl font-semibold text-[#1EA69A] mb-2">
                 {tip.title}

@@ -69,7 +69,7 @@ const AllItems = () => {
         </div>
         <div className="grid grid-cols-3 gap-8 max-w-6xl mx-auto mt-5 mb-20">
           {items.map((item) => (
-            <div className="bg-white shadow-lg  overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+            <div className="bg-white shadow-lg  overflow-hidden hover:shadow-xl transition-shadow back-primary">
               {/* Image */}
               <div className="relative">
                 <img

@@ -61,7 +61,7 @@ const Add = () => {
         </h1>
         <form
           onSubmit={handleSubmit}
-          className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 mt-10 border border-gray-100"
+          className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 mt-10 border border-gray-100 bg-primary"
         >
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

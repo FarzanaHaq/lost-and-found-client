@@ -6,3 +6,19 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+
+@layer utilities {
+  html[data-theme='dark'] .letter-primary {
+    @apply text-gray-300;
+  }
+  html[data-theme='dark'] .bg-primary {
+    @apply bg-gray-900;
+  }
+    html[data-theme='dark'] .back-primary {
+    @apply bg-gray-900;
+  }
+
+}
+
+
