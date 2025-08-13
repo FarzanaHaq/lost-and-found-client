@@ -23,7 +23,6 @@ const ErrorPage = () => {
         </div>
       </div>
       <div className="flex-1/2 relative">
-        <img src={ErrorPageFour} alt="" srcset="" />
         <a
           className="absolute bottom-4 right-55 text-[12px]"
           href="https://storyset.com/web"
