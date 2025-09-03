@@ -50,7 +50,7 @@ const Details = () => {
     };
     console.log(newPost);
 
-    fetch("http://localhost:3000/items", {
+    fetch("https://lost-found-server-azure.vercel.app/items", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +64,7 @@ const Details = () => {
         toast("Item recovered");
       });
 
-    fetch(`http://localhost:3000/new/${_id}`, {
+    fetch(`https://lost-found-server-azure.vercel.app/new/${_id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

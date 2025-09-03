@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white px-20 bg-primary">
+    <div className="fixed top-0 left-0 w-full z-50 bg-[#D8E9E7] px-20 ">
       <div className="navbar bg-white-100 max-w-7xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -78,8 +78,8 @@ const Header = () => {
           </div>
           <a className="btn btn-ghost text-xl">
             {" "}
-            <FaBasketShopping className="text-[#1EA69A] w-9 h-9" />{" "}
-            <span className="text-2xl ml-2 font-bold text-[#1EA69A]">
+            <FaBasketShopping className="text-[#3A3C51] w-9 h-9" />{" "}
+            <span className="text-2xl ml-2 font-bold text-[#3A3C51]">
               WhereIsIt
             </span>
           </a>
@@ -92,7 +92,7 @@ const Header = () => {
                 to={"/"}
                 className={({ isActive }) =>
                   isActive
-                    ? "border-b-2 rounded-none text-[#1EA69A] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
+                    ? "border-b-2 rounded-none text-[#3A3C51] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
                     : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none letter-primary"
                 }
               >
@@ -132,7 +132,7 @@ const Header = () => {
                 to={"/add"}
                 className={({ isActive }) =>
                   isActive
-                    ? "border-b-2 rounded-none text-[#1EA69A] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
+                    ? "border-b-2 rounded-none text-[#3A3C51] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
                     : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none letter-primary"
                 }
               >
@@ -162,14 +162,14 @@ const Header = () => {
                 onClick={() => {
                   signOutUser();
                 }}
-                className="btn btn-outline btn-primary text-[#1EA69A] border-[#1EA69A] border-2 text-[15px] hover:bg-white shadow-none"
+                className="btn btn-outline btn-primary text-[#3A3C51] border-[#3A3C51] border-2 text-[15px] hover:bg-white shadow-none"
               >
                 Logout
               </Link>
             </div>
           ) : (
             <Link to="/login" className="">
-              <button className=" btn text-[#1EA69A] border-[#1EA69A] border-2 text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none">
+              <button className=" btn text-[#3A3C51] border-[#3A3C51] border-2 text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none">
                 Login
               </button>
             </Link>

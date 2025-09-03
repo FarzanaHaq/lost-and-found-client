@@ -7,7 +7,7 @@ const Safety = () => {
     <div>
       <section className=" py-6 px-2 md:px-10">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#1EA69A] mb-6 sora-font">
+          <h2 className="text-3xl font-bold text-[#292A35] mb-6 sora-font">
             🔒 Safety Tips When Meeting Someone
           </h2>
           <p className="text-gray-600 mb-10">
@@ -19,7 +19,7 @@ const Safety = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="bg-white shadow-md rounded-xl p-6 border-l-4 border-[#1EA69A] bg-primary"
+              className="bg-white shadow-md rounded-xl p-6 border-l-4 border-[#292A35] bg-primary"
             >
               <h3 className="font-semibold text-lg mb-2">
                 📍 Meet in Public Places
@@ -33,7 +33,7 @@ const Safety = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="bg-white shadow-md rounded-xl p-6 border-l-4  border-[#1EA69A] bg-primary"
+              className="bg-white shadow-md rounded-xl p-6 border-l-4  border-[#292A35] bg-primary"
             >
               <h3 className="font-semibold text-lg mb-2">
                 🆔 Request Proof of Ownership
@@ -47,7 +47,7 @@ const Safety = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
-              className="bg-white shadow-md rounded-xl p-6 border-l-4  border-[#1EA69A] bg-primary"
+              className="bg-white shadow-md rounded-xl p-6 border-l-4  border-[#292A35] bg-primary"
             >
               <h3 className="font-semibold text-lg mb-2">👫 Don’t Go Alone</h3>
               <p className="text-gray-600">
@@ -59,7 +59,7 @@ const Safety = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
-              className="bg-white shadow-md rounded-xl p-6 border-l-4  border-[#1EA69A] bg-primary"
+              className="bg-white shadow-md rounded-xl p-6 border-l-4  border-[#292A35] bg-primary"
             >
               <h3 className="font-semibold text-lg mb-2">
                 🚫 Never Share Personal Info

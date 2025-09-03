@@ -17,8 +17,8 @@ const AllItems = () => {
       setLoading(true);
       fetch(
         query
-          ? `http://localhost:3000/search?title=${query}`
-          : `http://localhost:3000/allItems`,
+          ? `https://lost-found-server-azure.vercel.app/search?title=${query}`
+          : `https://lost-found-server-azure.vercel.app/allItems`,
         {
           method: "GET",
         }
@@ -47,7 +47,7 @@ const AllItems = () => {
         <title>All Items</title>
       </Helmet>
       <div className="mt-28 ">
-        <h1 className="text-center text-2xl font-bold text-[#1EA69A]">
+        <h1 className="text-center text-2xl font-bold text-[#292A35]">
           All Lost & Found Items
         </h1>
         <div className="flex justify-center mt-8">
@@ -57,11 +57,11 @@ const AllItems = () => {
               placeholder="Search by title..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className=" border border-gray-300 px-4 py-2 focus:border-[#1EA69A] focus:ring focus:ring-sky-200 w-[500px]"
+              className=" border border-gray-300 px-4 py-2 focus:border-[#292A35] focus:ring focus:ring-sky-200 w-[500px]"
             />
             <button
               type="submit"
-              className="bg-[#1EA69A] text-white px-6 py-2 "
+              className="bg-[#292A35] text-white px-6 py-2 "
             >
               Search
             </button>
@@ -91,11 +91,11 @@ const AllItems = () => {
               {/* Content */}
               <div className="p-5">
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                  <Tag size={16} className="text-[#1EA69A]" />
+                  <Tag size={16} className="text-[#292A35]" />
                   <span>{item.category}</span>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#1EA69A] mb-2">
+                <h3 className="text-lg font-bold text-[#292A35] mb-2">
                   {item.title}
                 </h3>
 
@@ -106,18 +106,18 @@ const AllItems = () => {
                 {/* Meta Info */}
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
                   <div className="flex items-center gap-1">
-                    <Calendar size={16} className="text-[#1EA69A]" />
+                    <Calendar size={16} className="text-[#292A35]" />
                     <span>{item.date}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <MapPin size={16} className="text-[#1EA69A]" />
+                    <MapPin size={16} className="text-[#292A35]" />
                     <span>{item.location}</span>
                   </div>
                 </div>
 
                 {/* Contact Button */}
                 <Link to={`/details/${item._id}`}>
-                  <button className="btn bg-[#1EA69A] text-white w-full mt-3">
+                  <button className="btn bg-[#292A35] text-white w-full mt-3">
                     View details
                   </button>
                 </Link>

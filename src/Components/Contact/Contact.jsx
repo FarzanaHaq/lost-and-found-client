@@ -77,7 +77,7 @@ const Contact = () => {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-[#1EA69A] text-white font-semibold py-2 rounded-lg transition-colors"
+            className="w-full bg-[#292A35] text-white font-semibold py-2 rounded-lg transition-colors"
           >
             Send Message
           </button>

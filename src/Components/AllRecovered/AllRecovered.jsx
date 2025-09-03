@@ -11,7 +11,7 @@ const AllRecovered = () => {
   useEffect(() => {
     if (!user?.email) return;
 
-    fetch(`http://localhost:3000/allRecovered?email=${user?.email}`, {
+    fetch(`https://lost-found-server-azure.vercel.app/allRecovered?email=${user?.email}`, {
       method: "GET",
     })
       .then((res) => res.json())

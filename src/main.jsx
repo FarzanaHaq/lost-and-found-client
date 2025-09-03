@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: "details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/items/${params.id}`),
+          fetch(`https://lost-found-server-azure.vercel.app/items/${params.id}`),
         element: (
           <PrivateRoute>
             <Details></Details>
@@ -67,7 +67,7 @@ const router = createBrowserRouter([
       {
         path: "update/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/items/${params.id}`),
+          fetch(`https://lost-found-server-azure.vercel.app/items/${params.id}`),
         element: (
           <PrivateRoute>
             <Update></Update>

@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
-import '../../../src/index.css'
+import "../../../src/index.css";
 
 const Recent = () => {
   const tips = [
     {
       title: "Found a Wallet Near the Library",
-      description: "Brown leather wallet with some IDs and cards has been found.",
+      description:
+        "Brown leather wallet with some IDs and cards has been found.",
     },
     {
       title: "Lost Headphones in Bus",
@@ -36,7 +37,7 @@ const Recent = () => {
   return (
     <section className="relative pb-5 overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="text-3xl font-bold text-center mb-8 text-[#1EA69A] flex items-center justify-center gap-2 sora-font">
+        <h2 className="text-3xl font-bold text-center mb-8 text-[#292A35]  flex items-center justify-center gap-2 sora-font">
           Featured Posts
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -46,9 +47,9 @@ const Recent = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white shadow-md rounded-lg p-6 bg-primary"
+              className="bg-white shadow-md rounded-lg p-6 hover:bg-[#F0F5F3] "
             >
-              <h3 className="text-xl font-semibold text-[#1EA69A] mb-2">
+              <h3 className="text-xl font-semibold text-[#292A35]  mb-2">
                 {tip.title}
               </h3>
               <p className="text-gray-600">{tip.description}</p>

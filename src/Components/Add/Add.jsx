@@ -33,7 +33,7 @@ const Add = () => {
       date: selectedDate.toISOString().split("T")[0],
     };
 
-    fetch("http://localhost:3000/addItems", {
+    fetch("https://lost-found-server-azure.vercel.app/addItems", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const Add = () => {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <div className="max-w-6xl mx-auto mt-28">
-        <h1 className="mb-5 text-center text-[25px] font-bold text-[#1EA69A]">
+        <h1 className="mb-5 text-center text-[25px] font-bold text-[#292A35]">
           Have you lost/found something? Make a post!
         </h1>
         <form
@@ -194,7 +194,7 @@ const Add = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="btn bg-[#1EA69A] text-white font-bold text-lg w-full mt-8"
+            className="btn bg-[#292A35] text-white font-bold text-lg w-full mt-8"
           >
             Submit
           </button>

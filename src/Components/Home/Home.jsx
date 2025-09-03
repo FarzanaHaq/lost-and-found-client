@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet";
-import Banner from "../Banner/Banner";
 import Latest from "../Latest/Latest";
 import Recent from "../Recent/Recent";
 import Safety from "../Safety/Safety";
 import Intro from "../Intro/Intro";
+import NewBanner from "../NewBanner/NewBanner";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
         <title>Home</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <Banner></Banner>
+      <NewBanner></NewBanner>
       <Recent></Recent>
       <Latest></Latest>
       <Intro></Intro>

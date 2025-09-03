@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer className="footer sm:footer-horizontal bg-white text-neutral-content p-10 mt-10 bg-primary">
         <aside className="pl-18">
-          <FaBasketShopping className="text-[#1EA69A] w-15 h-15" />
+          <FaBasketShopping className="text-[#292A35] w-15 h-15" />
          <Link to={"/terms"}> <p className="text-gray-600 text-[16px] font-medium letter-primary">
             Terms of Service
           </p></Link>
