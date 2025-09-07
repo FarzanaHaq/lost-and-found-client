@@ -35,7 +35,7 @@ const Recent = () => {
   ];
 
   return (
-    <section className="relative pb-5 overflow-hidden">
+    <section className="relative pb-5 overflow-hidden px-5 lg:px-0">
       <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-3xl font-bold text-center mb-8 text-[#292A35]  flex items-center justify-center gap-2 sora-font">
           Featured Posts

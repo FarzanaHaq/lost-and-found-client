@@ -14,9 +14,9 @@ const Home = () => {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <NewBanner></NewBanner>
+      <Intro></Intro>
       <Recent></Recent>
       <Latest></Latest>
-      <Intro></Intro>
       <Safety></Safety>
     </div>
   );

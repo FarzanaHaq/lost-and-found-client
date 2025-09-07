@@ -7,14 +7,14 @@ const Safety = () => {
     <div>
       <section className=" py-6 px-2 md:px-10">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#292A35] mb-6 sora-font">
+          <h2 className="text-[20px] lg:text-3xl font-bold text-[#292A35] mb-6 sora-font">
             🔒 Safety Tips When Meeting Someone
           </h2>
           <p className="text-gray-600 mb-10">
             Keep yourself and your belongings safe when connecting with others
             to return or claim items.
           </p>
-          <div className="grid md:grid-cols-2 gap-6 text-left">
+          <div className="grid md:grid-cols-2 gap-6 text-left px-3">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

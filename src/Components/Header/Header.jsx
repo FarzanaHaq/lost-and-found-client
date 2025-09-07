@@ -25,11 +25,18 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-[#D8E9E7] px-20 ">
+    <div className=" w-full bg-[#D8E9E7] lg:px-20 ">
       <div className="navbar bg-white-100 max-w-7xl mx-auto">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <a className="btn btn-ghost text-xl">
+            {" "}
+            <FaBasketShopping className="text-[#3A3C51] text-[25px] lg:text-[30px]" />
+            <span className="text-[20px] mt-1 lg:mt-0 lg:text-2xl lg:ml-2 font-bold text-[#3A3C51]">
+              WhereIsIt
+            </span>
+          </a>
+          <div className="dropdown ml-37 bg-[#FFC941]">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden px-2 py-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -76,13 +83,6 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
-            {" "}
-            <FaBasketShopping className="text-[#3A3C51] w-9 h-9" />{" "}
-            <span className="text-2xl ml-2 font-bold text-[#3A3C51]">
-              WhereIsIt
-            </span>
-          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-3">
@@ -141,7 +141,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end pr-5">
+        <div className="navbar-end pr-5 hidden lg:flex">
           {user ? (
             <div>
               <div
