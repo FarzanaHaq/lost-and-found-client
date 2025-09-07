@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import { Helmet } from "react-helmet";
 import { AuthContext } from "../../Context/AuthContext";
 
-
 const Register = () => {
   const { createUser, googleSignIn, updateUser } = use(AuthContext);
   const navigate = useNavigate();
@@ -64,47 +63,47 @@ const Register = () => {
         <title>Register</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl flex justify-center mx-auto my-20">
+      <h1 className="text-center font-[700] text-[25px] mt-8 lg:mt-15 text-[#3A3C51]">
+        Register
+      </h1>
+      <div className="card bg-[#D8E9E7] max-w-[300px] rounded-none  lg:max-w-[450px] shrink-0  flex justify-center mx-auto lg:px-6 lg:py-5 mt-8 lg:mt-10 mb-10">
         <div className="card-body">
           <form onSubmit={handleRegister} className="fieldset">
             <label className="label">Name</label>
             <input
               name="name"
               type="text"
-              className="input"
+              className="input w-full focus:outline-none border-none focus:placeholder-transparent"
               placeholder="Name"
             />
             <label className="label">Email</label>
             <input
               name="email"
               type="email"
-              className="input"
+              className="input w-full focus:outline-none border-none focus:placeholder-transparent"
               placeholder="Email"
             />
             <label className="label">Password</label>
             <input
               name="password"
               type="password"
-              className="input"
+              className="input w-full focus:outline-none border-none focus:placeholder-transparent"
               placeholder="Password"
             />
             <label className="label">PhotoUrl</label>
             <input
               name="photo"
               type="text"
-              className="input"
+              className="input w-full focus:outline-none border-none focus:placeholder-transparent"
               placeholder="photo"
             />
-            <div>
-              <a className="link link-hover">Forgot password?</a>
-            </div>
-            <button className="btn bg-sky-800 text-white mt-4">
+            <button className="btn bg-[#3A3C51] text-white mt-4 rounded-none">
               Register
             </button>
           </form>
           <button
             onClick={handleGoogle}
-            className="btn bg-white text-black border-[#e5e5e5]"
+            className="btn bg-white text-black border-[#e5e5e5] rounded-none"
           >
             <svg
               aria-label="Google logo"
@@ -135,8 +134,11 @@ const Register = () => {
             </svg>
             Login with Google
           </button>
-          <p className="text-center mt-2">
-            Already have an account? <Link to={"/login"}>Please Login</Link>
+          <p className="text-center mt-2 lg:text-[15px] font-[500]">
+            Already have an account?{" "}
+            <Link className="underline text-[#3A3C51]" to={"/login"}>
+              Please Login
+            </Link>
           </p>
         </div>
       </div>

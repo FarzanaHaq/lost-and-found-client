@@ -46,18 +46,18 @@ const AllItems = () => {
         <meta charSet="utf-8" />
         <title>All Items</title>
       </Helmet>
-      <div className="mt-28 ">
+      <div className="mt-15 lg:mt-28 ">
         <h1 className="text-center text-2xl font-bold text-[#292A35]">
           All Lost & Found Items
         </h1>
-        <div className="flex justify-center mt-8">
+        <div className="lg:flex lg:justify-center mt-8 px-5 lg:px-0">
           <form onSubmit={handleSearch} className="flex gap-2 mb-6">
             <input
               type="text"
               placeholder="Search by title..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className=" border border-gray-300 px-4 py-2 focus:border-[#292A35] focus:ring focus:ring-sky-200 w-[500px]"
+              className=" border border-gray-300 px-4 py-2 focus:border-[#292A35] focus:ring focus:ring-sky-200 lg:w-[500px]"
             />
             <button
               type="submit"
@@ -67,7 +67,7 @@ const AllItems = () => {
             </button>
           </form>
         </div>
-        <div className="grid grid-cols-3 gap-8 max-w-6xl mx-auto mt-5 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-5 mb-20 px-5 lg:px-0">
           {items.map((item) => (
             <div className="bg-white shadow-lg  overflow-hidden hover:shadow-xl transition-shadow back-primary">
               {/* Image */}

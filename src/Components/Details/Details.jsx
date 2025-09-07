@@ -79,9 +79,9 @@ const Details = () => {
   }
   return (
     <div>
-      <div className="max-w-6xl mx-auto my-14">
+      <div className="max-w-6xl mx-auto my-8 lg:my-14">
         <div className="card lg:card-side bg-base-100 shadow-sm">
-          <figure className="w-[550px] h-[450px] object-cover object-center">
+          <figure className="lg:w-[550px] lg:h-[450px] object-cover object-center">
             <img
               className="w-[333px] object-cover object-center"
               src={photo}

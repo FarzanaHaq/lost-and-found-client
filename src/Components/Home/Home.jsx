@@ -7,7 +7,7 @@ import NewBanner from "../NewBanner/NewBanner";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Home</title>

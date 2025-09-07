@@ -40,31 +40,29 @@ const Login = () => {
         <title>Login</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl flex justify-center mx-auto mt-20">
-        <div className="card-body">
+      <h1 className="text-center font-[700] text-[25px] mt-15 text-[#3A3C51]">Login</h1>
+      <div className="card bg-[#D8E9E7] max-w-[300px] lg:max-w-[450px] lg:px-6 lg:py-5  shrink-0 flex justify-center rounded-none mx-auto mt-10 mb-10">
+        <div className="card-body pt-6">
           <form onSubmit={handleLogin} className="fieldset">
-            <label className="label">Email</label>
+            <label className="label text-[15px] font-[500]">Email</label>
             <input
               name="email"
               type="email"
-              className="input"
+              className="input border-none w-full rounded-none focus:placeholder-transparent focus:outline-none"
               placeholder="Email"
             />
-            <label className="label">Password</label>
+            <label className="label text-[15px] font-[500]">Password</label>
             <input
               name="password"
               type="password"
-              className="input"
+              className="input border-none w-full rounded-none focus:placeholder-transparent focus:outline-none"
               placeholder="Password"
             />
-            <div>
-              <a className="link link-hover">Forgot password?</a>
-            </div>
-            <button className="btn bg-sky-800 text-white mt-4">Login</button>
+            <button className="btn bg-[#3A3C51] text-white mt-4 rounded-none">Login</button>
           </form>
           <button
             onClick={handleGoogle}
-            className="btn bg-white text-black border-[#e5e5e5]"
+            className="btn bg-white text-black border-[#e5e5e5] rounded-none"
           >
             <svg
               aria-label="Google logo"
@@ -95,8 +93,11 @@ const Login = () => {
             </svg>
             Login with Google
           </button>
-          <p className="text-center mt-2">
-            New to this site?<Link to={"/register"}>Please Register</Link>
+          <p className="text-center mt-2 text-[15px] font-[500]">
+            New to this site? Please{" "}
+            <Link className="underline text-[#3A3C51]" to={"/register"}>
+              Register
+            </Link>
           </p>
         </div>
       </div>

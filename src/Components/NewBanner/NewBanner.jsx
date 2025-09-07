@@ -29,7 +29,7 @@ const NewBanner = () => {
           </div>
         </div>
       </div>
-      <div className="w-[331px] lg:w-[260px] bg-[#FFC941] absolute top-70 right-5 lg:top-50 lg:right-25 z-30">
+      <div className="max-w-[331px] lg:max-w-[260px] bg-[#FFC941] absolute top-70 right-4 lg:top-50 lg:right-25 z-30">
         <button className="w-full py-6 border-b-1 border-yellow-200 font-[500] hover:bg-[#202124] hover:text-white">
           Lost Something?
         </button>

@@ -55,7 +55,7 @@ const Add = () => {
         <title>Add Items</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <div className="max-w-6xl mx-auto mt-28">
+      <div className="max-w-6xl mx-auto mt-15 lg:mt-28">
         <h1 className="mb-5 text-center text-[25px] font-bold text-[#292A35]">
           Have you lost/found something? Make a post!
         </h1>
