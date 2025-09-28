@@ -61,7 +61,7 @@ const Add = () => {
         </h1>
         <form
           onSubmit={handleSubmit}
-          className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 mt-10 border border-gray-100 bg-primary"
+          className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 md:p-15 mt-10 border border-gray-100 bg-primary"
         >
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -145,7 +145,7 @@ const Add = () => {
               <DatePicker
                 selected={selectedDate}
                 onChange={(date) => setSelectedDate(date)}
-                className="input input-bordered focus:border-sky-500 focus:ring focus:ring-sky-200 w-[405px]"
+                className="input input-bordered focus:border-sky-500 focus:ring focus:ring-sky-200  w-[310px] lg:w-[405px]"
               />
             </div>
 

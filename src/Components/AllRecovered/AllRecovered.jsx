@@ -31,7 +31,9 @@ const AllRecovered = () => {
   }
 
 if (loading) {
-  return "loading..."
+  return <div className="flex justify-center my-5">
+    <span className="loading loading-spinner loading-xl"></span>
+  </div>
 }
 
   return (
@@ -41,7 +43,7 @@ if (loading) {
         <title>Recovered</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <div className="hidden lg:flex justify-end p-9 ">
+      <div className="hidden md:flex justify-end p-9 ">
         {" "}
         <button onClick={handleClick} className="text-3xl">
           {" "}
@@ -95,7 +97,7 @@ if (loading) {
                 <h1 className="text-center text-2xl font-bold text-sky-800">
                   All recovered items
                 </h1>
-                <div className="grid grid-cols-1 lg;grid-cols-3 gap-8 max-w-6xl mx-auto mt-10 mb-20 px-5 lg:px-0">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10 mb-20 px-5 lg:px-0">
                   {myData.map((data) => (
                     <div className="card bg-base-100 rounded-none shadow-2xl">
                       <figure>

@@ -60,7 +60,7 @@ const MyItems = () => {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       {myData && myData.length > 0 ? (
-       <div className="max-w-6xl mx-auto mt-10 ">
+       <div className="max-w-6xl mx-auto mt-10 md:px-8 ">
       <div className="overflow-x-auto">
         <table className="table">
           <thead>

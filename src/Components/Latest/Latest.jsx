@@ -22,7 +22,7 @@ const Latest = () => {
         <h1 className="text-center text-2xl font-bold text-[#292A35] sora-font">
           Latest Lost & Find Items
         </h1>
-        <div className="grid grid-cols-1  lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10 mb-20">
           {data.slice(0, 6).map((item, index) => (
             <div
               className="bg-white shadow-lg  overflow-hidden  hover:shadow-xl transition-shadow "

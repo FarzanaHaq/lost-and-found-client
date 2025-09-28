@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <div className=" w-full bg-[#D8E9E7] lg:px-20 ">
+    <div className=" w-full bg-[#D8E9E7] md:px-5 lg:px-20 ">
       <div className="navbar bg-white-100 max-w-7xl mx-auto">
         <div className="navbar-start">
           <a className="btn btn-ghost text-xl">
@@ -35,8 +35,12 @@ const Header = () => {
               WhereIsIt
             </span>
           </a>
-          <div className="dropdown ml-37 bg-[#FFC941]">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden px-2 py-1">
+          <div className="dropdown ml-37 md:ml-120 bg-base-100">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden px-2 py-1"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -55,13 +59,13 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow -right-3 top-8"
+              className="menu menu-sm dropdown-content rounded-box z-1 mt-3 p-2 shadow -right-2 top-10 bg-yellow-500 w-52"
             >
               <li>
                 <NavLink to={"/"}>Home</NavLink>
               </li>
               <li>
-                <a>Parent</a>
+                <a>Items</a>
                 <ul className="p-2">
                   <li>
                     {" "}
@@ -78,6 +82,22 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
+              {user ? (
+                <li>
+                  <NavLink to={"/login"}>Login</NavLink>
+                </li>
+              ) : (
+                <li>
+                  <NavLink
+                    to={"/"}
+                    onClick={() => {
+                      signOutUser();
+                    }}
+                  >
+                    Logout
+                  </NavLink>
+                </li>
+              )}
               <li>
                 <NavLink to={"/donate"}>Donation</NavLink>
               </li>

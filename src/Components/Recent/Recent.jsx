@@ -40,7 +40,7 @@ const Recent = () => {
         <h2 className="text-3xl font-bold text-center mb-8 text-[#292A35]  flex items-center justify-center gap-2 sora-font">
           Featured Posts
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tips.map((tip, index) => (
             <motion.div
               key={index}

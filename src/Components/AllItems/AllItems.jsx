@@ -50,7 +50,7 @@ const AllItems = () => {
         <h1 className="text-center text-2xl font-bold text-[#292A35]">
           All Lost & Found Items
         </h1>
-        <div className="lg:flex lg:justify-center mt-8 px-5 lg:px-0">
+        <div className="md:flex md:justify-center mt-8 px-5 lg:px-0">
           <form onSubmit={handleSearch} className="flex gap-2 mb-6">
             <input
               type="text"
@@ -67,7 +67,7 @@ const AllItems = () => {
             </button>
           </form>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-5 mb-20 px-5 lg:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-5 mb-20 px-5 lg:px-0">
           {items.map((item) => (
             <div className="bg-white shadow-lg  overflow-hidden hover:shadow-xl transition-shadow back-primary">
               {/* Image */}

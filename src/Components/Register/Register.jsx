@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { ToastContainer, toast } from "react-toastify";
 import { Helmet } from "react-helmet";
@@ -7,24 +7,30 @@ import { AuthContext } from "../../Context/AuthContext";
 const Register = () => {
   const { createUser, googleSignIn, updateUser } = use(AuthContext);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   function handleRegister(e) {
     e.preventDefault();
+    setLoading(true);
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
     const photo = e.target.photo.value;
+
     if (password.length < 6) {
       toast("password must be six words");
+      setLoading(false);
       return;
     }
     if (!/[A-Z]/.test(password)) {
       toast("Password must contain at least one uppercase letter");
+      setLoading(false);
       return;
     }
 
     if (!/[a-z]/.test(password)) {
       toast("Password must contain at least one lowercase letter");
+      setLoading(false);
       return;
     }
     createUser(email, password)
@@ -32,16 +38,18 @@ const Register = () => {
         console.log(result);
         updateUser({ displayName: name, photoURL: photo })
           .then((result) => {
+            setLoading(false);
             console.log(result);
-            toast("User created");
             navigate("/");
           })
           .catch((error) => {
-            console.log(error.message);
+            toast(error.message);
+            setLoading(false);
           });
       })
       .catch((error) => {
-        console.log(error.message);
+        setLoading(false);
+        toast(error.message);
       });
   }
 
@@ -98,7 +106,11 @@ const Register = () => {
               placeholder="photo"
             />
             <button className="btn bg-[#3A3C51] text-white mt-4 rounded-none">
-              Register
+              {loading ? (
+                <span className="loading loading-dots loading-lg"></span>
+              ) : (
+                "Register"
+              )}
             </button>
           </form>
           <button
