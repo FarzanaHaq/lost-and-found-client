@@ -10,7 +10,7 @@ const Latest = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://lost-found-server-azure.vercel.app/recent")
+    fetch("https://new-try-tau.vercel.app/recent")
       .then((response) => response.json())
       .then((fetchedData) => {
         setData(fetchedData);

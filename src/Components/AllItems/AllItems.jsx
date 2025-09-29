@@ -17,8 +17,8 @@ const AllItems = () => {
       setLoading(true);
       fetch(
         query
-          ? `https://lost-found-server-azure.vercel.app/search?title=${query}`
-          : `https://lost-found-server-azure.vercel.app/allItems`,
+          ? `https://new-try-tau.vercel.app/search?title=${query}`
+          : `https://new-try-tau.vercel.app/allItems`,
         {
           method: "GET",
         }

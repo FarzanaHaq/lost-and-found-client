@@ -35,7 +35,7 @@ const Header = () => {
               WhereIsIt
             </span>
           </a>
-          <div className="dropdown ml-37 md:ml-120 bg-base-100">
+          <div className="dropdown ml-37 md:ml-120 lg:ml-0 bg-base-100">
             <div
               tabIndex={0}
               role="button"

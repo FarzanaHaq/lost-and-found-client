@@ -13,7 +13,7 @@ const AllRecovered = () => {
     if (!user?.email) return;
     setLoading(true);
     fetch(
-      `https://lost-found-server-azure.vercel.app/allRecovered?email=jhal@muri.com`,
+      `https://new-try-tau.vercel.app/allRecovered?email=${user?.email}`,
       {
         method: "GET",
       }

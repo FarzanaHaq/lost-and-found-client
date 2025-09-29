@@ -13,7 +13,7 @@ const MyItems = () => {
   useEffect(() => {
     if (!user?.email) return;
 
-    fetch(`https://lost-found-server-azure.vercel.app/myItems?email=${user?.email}`, {
+    fetch(`https://new-try-tau.vercel.app/myItems?email=${user?.email}`, {
       method: "GET",
     })
       .then((res) => res.json())
@@ -34,7 +34,7 @@ const MyItems = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://lost-found-server-azure.vercel.app/deleteItems/${params}`, {
+        fetch(`https://new-try-tau.vercel.app/deleteItems/${params}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

@@ -34,7 +34,7 @@ const Update = () => {
       date: selectedDate.toISOString().split("T")[0],
     };
 
-    fetch(`https://lost-found-server-azure.vercel.app/updateItems/${data._id}`, {
+    fetch(`https://new-try-tau.vercel.app/updateItems/${data._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

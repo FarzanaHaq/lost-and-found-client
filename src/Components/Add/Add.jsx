@@ -33,7 +33,7 @@ const Add = () => {
       date: selectedDate.toISOString().split("T")[0],
     };
 
-    fetch("https://lost-found-server-azure.vercel.app/addItems", {
+    fetch("https://new-try-tau.vercel.app/addItems", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
